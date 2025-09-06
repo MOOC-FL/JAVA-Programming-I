@@ -107,6 +107,31 @@ test-report:
 test:
 BUILD SUCCESSFUL (total time: 0 seconds)
 ```
+* [ ] The output tells us that three tests were executed. One of them failed.
+* [ ] The test output also informs us of the line in which the error occured (25), and of the expected (-2) and actual (2) values.
+* [ ]  Whenever the execution of tests ends in an error, NetBeans also displays the error state visually.
+```java
+//While the previous tests two passed, one of them resulted in an error.
+//Let's fix the mistake left in the Calculator class.
+// ...
+public void subtract(int number) {
+    this.value -= number;
+}
+// ...
+```
+```JUnit
+// When the test are run again, they pass.
+Sample output
+Testsuite: CalculatorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec
+
+test-report:
+test:
+BUILD SUCCESSFUL (total time: 0 seconds)
+```
+> Unit Testing and the Parts of an Application
+> Unit testing tends to be extremely complicated if the whole application has been written in "Main". To make testing easier, the app should be split into small parts, each having a clear responsibility. In the previous section, we practiced this when we seperated the user interface from the application logic. Writing tests for parts of an application, such as the 'JokeManager' class from the previous section is significantly easier than writing them for program contained in "Main" in its entirety.
+
 
 
 
