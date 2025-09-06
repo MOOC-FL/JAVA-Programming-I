@@ -51,3 +51,82 @@ public class CalculatorTest {
     }
 }
 ```
+* [ ] In the calculatorInitialValueZero method a calculator object is first created. The assertEquals method provided by the JUnit test framework is then used to check the value.
+* [ ] The method is imported from the Assert class with the import Static command, and it's given the expected value as a parameter - 0 in this instance - and the value returned by the calculator.
+* [ ]  If the values of the assertEquals method values ​​differ, the test will not pass. Each test method should have an "annotation" @ Test.
+* [ ]  This tells the JUnit test framework that this is an executable test method.
+- Running the tests prints to the output tab (typically at the bottom of NetBeans) that contains some information specific to each test class. In the example below, tests of the CalculatorTest class from the package are executed. The number of tests executed were 1, none of which failed — failure in this context means that the functionality tested by the test did not work as expected. ->
+```JUnit
+Testsuite: CalculatorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec
+
+test-report:
+test:
+BUILD SUCCESSFUL (total time: 0 seconds)
+```
+```java
+// Let's add functionality for adding and subtracting to the test class.
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
+
+public class CalculatorTest {
+
+    @Test
+    public void calculatorInitialValueZero() {
+        Calculator calculator = new Calculator();
+        assertEquals(0, calculator.getValue());
+    }
+
+    @Test
+    public void valueFiveWhenFiveAdded() {
+        Calculator calculator = new Calculator();
+        calculator.add(5);
+        assertEquals(5, calculator.getValue());
+    }
+
+    @Test
+    public void valueMinusTwoWhenTwoSubstracted() {
+        Calculator calculator = new Calculator();
+        calculator.subtract(2);
+        assertEquals(-2, calculator.getValue());
+    }
+}
+//Executing the tests produces the following output.
+```
+```JUnit
+Testsuite: CalculatorTest
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec
+
+Testcase: valueMinusTwoWhenTwoSubstracted(CalculatorTest): FAILED
+expected:<-2> but was:<2>
+junit.framework.AssertionFailedError: expected:<-2> but was:<2>
+at CalculatorTest.valueMinusTwoWhenTwoSubstracted(CalculatorTest.java:25)
+
+Test CalculatorTest FAILED
+test-report:
+test:
+BUILD SUCCESSFUL (total time: 0 seconds)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
