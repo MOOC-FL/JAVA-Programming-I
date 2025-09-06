@@ -32,5 +32,22 @@ public class Calculator {
 ```
 * [ ] The calculator works by always remembering the result produced by the preceding calculation. All subsequent calculations are always added to the previous result. A minor error resulting from copying and pasting has been left in the calculator above. The method subtract should deduct from the value, but it currently adds to it.
 * [ ] Unit test writing begins by creating a test class, which is created under the Test-Packages folder. When testing the Calculator class, the test class is to be called CalculatorTest. The string Test at the end of the name tells the programming environment that this is a test class. Without the string Test, the tests in the class will not be executed. (Note: Tests are created in NetBeans under the Test Packages folder.)
+```java
+// The test class CalculatorTest is initially empty.
+public class CalculatorTest {
+}
+```
+- Tests are methods of the test class where each test tests an individual unit. Let's begin testing the class — we start off by creating a test method that confirms that the newly created calculator's value is intially 0.
+```java
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
 
+public class CalculatorTest {
 
+    @Test
+    public void calculatorInitialValueZero() {
+        Calculator calculator = new Calculator();
+        assertEquals(0, calculator.getValue());
+    }
+}
+```
