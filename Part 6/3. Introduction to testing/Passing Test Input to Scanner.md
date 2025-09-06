@@ -12,6 +12,12 @@ String input = "one\n" + "two\n"  +
                 "six\n";
 
 Scanner reader = new Scanner(input);
+/* Passing a string to the constructor of the Scanner class replaces input read from the keyboard.
+ As such, the content of the string variable input 'simulates' user input.
+ A line break in the input is marked with \n.
+Therefore, each part ending in an newline character in a given string input corresponds
+ to one input given to the nextLine() command. */
+
 
 ArrayList<String> read = new ArrayList<>();
 
@@ -33,3 +39,7 @@ if (read.contains("six")) {
 
 
 ```
+- When testing your program again manually, change the parameter Scanner object constructor to System.in, i.e., to the system's input stream. Alternatively, you can also change the test input, since we're dealing with a string.
+
+- The working of the program should continue to be checked on-screen. The print output can be a little confusing at first, as the automated input is not visible on the screen at all. The ultimate aim is to also automate the checking of the correctness of the output so that the program can be tested and the test result analyzed with the "push of a button". We shall return to this in later sections.
+
