@@ -16,3 +16,6 @@
 - ●Results in maintainable structure, since the program is built in small parts, refactoring steadily.
 - ●The end product contains tests, which makes further development easier: when the code is changed, it’s easy to check if the existing functionality still works.
 - ●Fewer bugs in production.
+> More about software testing
+Unit testing is only a part of software testing. On top of unit testing, a developer also performs integration tests that examine the interoperability of components, such as classes, and interface tests that test the application's interface through elements provided by the interface, such as buttons.
+These testing methods are covered in more detail in the more advanced courses.
