@@ -1,4 +1,6 @@
 public class UserInterface {
+        private WordSet wordSet;
+
     private Scanner scanner;
         private ArrayList<String> words;
 
@@ -6,6 +8,8 @@ public class UserInterface {
     public UserInterface(Scanner scanner) {
         this.scanner = scanner;
         this.words = new ArrayList<String>();
+                this.wordSet = wordSet;
+
     }
 
     public void start() {
