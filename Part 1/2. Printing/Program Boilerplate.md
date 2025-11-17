@@ -27,3 +27,13 @@ public class Example {
     }
 }
 ```
+#### Printing Multiple Lines
+- Programs are constructed command-by-command, where each command is placed on a new line. In the example below, the command System.out.println appears twice, which means that two print commands are being executed in the program.
+```java
+public class Ohjelma {
+    public static void main(String[] args) {
+        System.out.println("Hello world!");
+        System.out.println("... and the universe!");
+    }
+}
+```
