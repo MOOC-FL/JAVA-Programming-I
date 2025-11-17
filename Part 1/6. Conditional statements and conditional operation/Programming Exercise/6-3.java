@@ -1,3 +1,4 @@
+// Write a program that prompts the user for an integer and prints the string "Orwell" if the number is exactly 1984.
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
