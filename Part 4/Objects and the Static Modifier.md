@@ -1,6 +1,10 @@
-# Objects and the `static` Modifier in Java
+#### Objects and the `static` Modifier in Java
+> We've used the modifier `static` in some of the methods that we've written. The `static` modifier indicates that the method in question does not belong to an object and thus cannot be used to access any variables that belong to objects.
 
-## Key Differences at a Glance
+> Going forward, our methods will not include the `static` keyword if they're used to process information about objects created from a given class. If a method receives as parameters all the variables whose values ​​it uses, it can have a `static` modifier.
+
+
+#### Key Differences at a Glance
 
 | **Aspect** | **Instance (Non-Static) Members** | **Static Members** |
 |------------|-----------------------------------|-------------------|
@@ -12,9 +16,9 @@
 | **Can Access Static Members?** | Yes | Yes (directly) |
 | **Common Use Cases** | Object-specific state/behavior | Utility methods, constants, shared counters |
 
-## Detailed Examples
+#### Detailed Examples
 
-### 1. **Class with Both Static and Instance Members**
+#### 1. **Class with Both Static and Instance Members**
 
 ```java
 public class Employee {
@@ -48,7 +52,7 @@ public class Employee {
 }
 ```
 
-### 2. **Usage in Main Method**
+#### 2. **Usage in Main Method**
 
 ```java
 public class Main {
@@ -74,7 +78,7 @@ public class Main {
 }
 ```
 
-### 3. **Static Block for Initialization**
+#### 3. **Static Block for Initialization**
 
 ```java
 public class Database {
@@ -97,7 +101,7 @@ public class Database {
 }
 ```
 
-### 4. **Important Restrictions**
+#### 4. **Important Restrictions**
 
 ```java
 public class Example {
@@ -122,9 +126,9 @@ public class Example {
 }
 ```
 
-## Common Use Cases for `static`
+#### Common Use Cases for `static`
 
-### **1. Utility/Helper Classes**
+#### **1. Utility/Helper Classes**
 ```java
 public class MathUtils {
     // Prevent instantiation
@@ -143,7 +147,7 @@ public class MathUtils {
 // Usage: MathUtils.circleArea(5.0)
 ```
 
-### **2. Constants**
+#### **2. Constants**
 ```java
 public class Constants {
     public static final int MAX_USERS = 1000;
@@ -152,7 +156,7 @@ public class Constants {
 }
 ```
 
-### **3. Factory Methods**
+#### **3. Factory Methods**
 ```java
 public class Logger {
     private static Logger instance;
@@ -168,7 +172,7 @@ public class Logger {
 }
 ```
 
-### **4. Main Method**
+#### **4. Main Method**
 ```java
 public class Application {
     // Must be static - called without creating Application object
@@ -178,7 +182,7 @@ public class Application {
 }
 ```
 
-## Memory Diagram
+#### Memory Diagram
 
 ```
 [Class Area/Method Area]
@@ -196,7 +200,7 @@ public class Application {
     └── id = 2
 ```
 
-## Best Practices
+#### Best Practices
 
 1. **Use `static` for:**
    - Constants (`static final`)
@@ -215,7 +219,7 @@ public class Application {
    - Static context (methods/blocks) cannot use `this` or `super`
    - Static variables are initialized before any object creation
 
-## Quick Reference Table
+#### Quick Reference Table
 
 | **Scenario** | **Should it be static?** | **Why?** |
 |--------------|-------------------------|----------|
