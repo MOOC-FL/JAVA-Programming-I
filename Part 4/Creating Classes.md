@@ -13,6 +13,8 @@ public class Main {
     }
 }
 ```
+- Let's create a class named` Person`. For this class, we create a separate file named `Person.java`. Our program now consists of two separate files since the main program is also in its own file. `The Person.java` file initially contains the class definition public class Person and the curly brackets that confine the contents of the class.
+
 
 
 
