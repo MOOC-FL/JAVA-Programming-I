@@ -20,6 +20,25 @@ public class Person {
 > **Objects and the Static Modifier**
 > We've used the modifier `static` in some of the methods that we've written.
 > The `static` modifier indicates that the method in question does not belong to an object and thus cannot be used to access any variables that belong to objects.
+- In addition to the class name, instance variables and constructor, the class diagram now also includes the method `printPerson`. Since the method comes with the`public modifier`, the method name is prefixed with a plus sign. No parameters are defined for the method, so nothing is put inside the method's parentheses. The method is also marked with information indicating that it does not return a value, here `void`.
+- The method `printPerson` contains one line of `code` that makes use of the instance variables name and age — the class diagram says nothing about its internal implementations. Instance variables are referred to with the prefix this. All of the object's variables are visible and available from within the method.
+```java
+public class Main {
+
+    public static void main(String[] args) {
+        Person ada = new Person("Ada");
+        Person antti = new Person("Antti");
+        Person martin = new Person("Martin");
+
+        ada.printPerson();
+        antti.printPerson();
+        martin.printPerson();
+    }
+}
+```
+
+
+
 
 
 
