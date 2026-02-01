@@ -13,7 +13,31 @@ public class Main {
     }
 }
 ```
-- Let's create a class named` Person`. For this class, we create a separate file named `Person.java`. Our program now consists of two separate files since the main program is also in its own file. `The Person.java` file initially contains the class definition public class Person and the curly brackets that confine the contents of the class.
+- Let's create a class named`Person`. For this class, we create a separate file named `Person.java`. Our program now consists of two separate files since the main program is also in its own file. `The Person.java` file initially contains the class definition public class Person and the curly brackets that confine the contents of the class.
+```java
+public class Person {
+
+}
+```
+- You can also draw a class diagram to depict a class. We'll become familiar with its notations as we go along. An empty person-named class looks like this:
+- A class defines the attributes and behaviors of objects that are created from it. Let's decide that each person object has a name and an age. It's natural to represent the name as a string, and the age as an integer. We'll go ahead and add these to our blueprint:
+```java
+public class Person {
+    private String name;
+    private int age;
+}
+```
+- We specify above that each object created from the`Person` class has a name and an age. Variables defined inside a class are called `instance variables`, or `object field`s or `object attributes`. Other names also seem to exist.
+- Instance variables are written on the lines following the class definition `public class Person` {. Each variable is preceded by the keyword `private`. The keyword `private` means that the variables are **"hidden"** inside the object. This is known as **encapsulation**.
+- In the class diagram, the variables associated with the class are defined as `"variableName: variableType"`.
+- **The minus sign before the variable name indicates that the variable is encapsulated (it has the keyword private).**
+- We have now defined a `blueprint — a class —` for the `person` object. Each new person object has the variables name and age, which are able to hold `object-specific values`. The "state" of a person consists of the values assigned to their name and age.
+
+
+
+
+
+
 
 
 
