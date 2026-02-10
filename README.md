@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="https://github.com/MOOC-FL/Media/blob/main/java%20Programming%201/java%20programming.png" alt="">
+</p
 # JAVA-Programming-I
 📚 Complete Solutions to University of Helsinki's MOOC Java Programming I &amp; II *Structured exercises • TMC-compatible • Java 17 • Learning-focused*
 # MOOC.fi Java Programming Course Solutions
