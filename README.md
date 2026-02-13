@@ -55,11 +55,3 @@
 - 🔍 **Exercise Descriptions** (Brief context in each folder)
 - 🚫 **No Spoilers** (Solutions hidden behind expandable sections)
 
-## 🛠️ How to Use
-1. **Clone & Explore**:
-```bash
-git clone https://github.com/yourusername/mooc-fi-java-solutions.git
-```
-
----
-
